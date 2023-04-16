@@ -99,5 +99,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
+<div class="page" id="one">		<!--Created page 1 -->
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you have cold, clammy skin?</p>		<!-- This is my first question --> 
+	<a href="#two" onclick="exhaustionAdd();" class="w3-btn w3-black"> Yes</a>		<!-- This is the yes button, which registers the answer to add to the heat exhaustion count -->
+	<a href="#two" onclick="strokeAdd();" class="w3-btn w3-black"> No</a>		<!-- This is the no button, registered to add to the heat stroke count -->
+    	</div><!--/content-->
+</div>
+	
+	
 </body>
 </html>
