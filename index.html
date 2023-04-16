@@ -50,7 +50,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function strokeAdd(){ //The addition of buttons corresponding to stroke added here//
             stroke_count = stroke_count + 1;
         }
+	
+	function results(){ 
+	var exhaustionPercent = (exhaustion_count)/(4)*100 //This function calculates the overall probability of heat exhaustion based upon the corresponding buttons pressed by the user.//
 
+	var strokePercent = (stroke_count)/(4)*100 //This is the same function as above, but relating to heat stroke. The math is also the same, dividing by the number of questions and multiplying by 100 to get a percent value.//
+	var resultText = document.getElementById("resultspage"); // This line puts the percent calculation on the results page.//
+	resultText.innerHTML = "Probability it is heat exhaustion =" + exhaustionPercent + "<br> Probability it is heat stroke =" +strokePercent; //This is the formatting for how the results are being placed for the results page.//
+		
+	}
 </script>	
 
 
